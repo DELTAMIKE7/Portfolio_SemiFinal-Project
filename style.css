@@ -1,0 +1,461 @@
+@font-face {
+    font-family: Deli;
+    src: url(./DELIRIUM\ NCV.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100vw;
+}
+/* ----------------Page 1111111---------------- */
+/* ----------------Page 1111111---------------- */
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+#nav{
+    height: 110px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 3vw 3vw 0 3vw;
+    position: relative;
+}
+.navopen{
+    width: 28vw;
+    height: 0vw;
+    display: none;
+    /* background-color: rgba(213, 222, 222, 0.412); */
+    /* backdrop-filter: blur(1px); */
+    position: absolute;
+    opacity: 0;
+    top: 6%;
+    left: 2%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: width 1s ease;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+    transition: opacity 2s ease;
+}
+.navopen>h1{
+    font-family: deli;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    font-weight: 900;
+}
+#nav>h1{
+    font-family: deli;
+    letter-spacing: .1rem;
+    font-size: 3vw;
+}
+
+#navright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:35px;
+    /* background-color: blue; */
+}
+#navright>i{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4  vw;
+}
+#navright>h2{
+    font-family: Gilroy;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+}
+#navbottom{
+    position: absolute;
+    bottom: 15%;
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+.nbleft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.nbleft>h1{
+    font-family: Deli;
+    font-size: 7vw;
+    font-weight: 100;
+    line-height: 5vw;
+    letter-spacing: .4rem;
+}
+.nbleft>h4{
+    font-family: Gilroy;
+}
+.nbright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.nbright>h2{
+    font-family: deli;
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+.nbright>i{
+    font-size: 1.6vw;
+    width: 37px;
+    height: 37px;
+    background-color: #AFD0CA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picback{
+    width: 33vw;
+    height: 33vw;
+    background-color: #AFD0CA;
+    background: radial-gradient(#a2c8c1,#AFD0CA,#AFD0CA);
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+#dimg{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45vw;
+    filter: drop-shadow(15px 5px 20px rgba(0, 0, 0, 0.419));
+}
+/* ----------------Page 222222---------------- */
+/* ----------------Page 222222---------------- */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 243, 247);
+}
+.ptext{
+    /* background-color: rgb(54, 164, 212); */
+    padding: 1.5vw 5vw;
+}
+.ptext>h1{
+    font-family: Deli;
+    font-size: 8vw;
+    font-weight: 100;
+}
+.ptext>h3{
+    font-family: Gilroy;
+    font-size: 1.3vw;
+    font-weight: 400;
+    width: 50%;
+}
+.project{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    overflow-x: auto;
+    padding: 2vw 4vw;
+}
+.project::-webkit-scrollbar{
+    display: none;
+}
+.project>.slide{
+    width: 50%;
+    flex-shrink: 0;
+
+    margin-right: 30px;
+}
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+/* ----------------Page 33333---------------- */
+/* ----------------Page 33333---------------- */
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#page3>h1{
+    font-size: 9vw;
+    font-family: Gilroy;
+    font-weight: 900;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+#page3>p{
+    font-size: 1.1vw;
+    font-family: Gilroy;
+    font-weight: 900;
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    bottom: 15%;
+}
+#page3>.image{
+    width: 50vw;
+    height: 35vw;
+    /* background-color: blue; */
+    background-image: url(https://images.unsplash.com/photo-1660760144156-283959017370?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -20%;
+    bottom: 20%;
+    transform: translate(0% ,0%);
+    
+}
+#page3>.image>h1{
+    font-size: 15vw;
+    letter-spacing: .5vw;
+    font-family: deli;
+    position: absolute;
+    bottom: -20%;
+    left: -7%;
+    opacity: .7;
+
+}
+/* ----------------Page 444444---------------- */
+/* ----------------Page 444444---------------- */
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.pg4left{
+    width: 60%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15vw;   
+    gap: 14px;
+}
+.pg4left>h1{
+    font-size: 4.5vw;
+}
+.pg4left>a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    font-family: Gilroy;
+    font-weight: 900;
+    position: relative;
+    /* background-color: rgb(158, 110, 110); */
+    overflow: hidden;
+    width: 50%;
+    height: 30px;
+}
+.pg4left>a>.line{
+    height: 2px;
+    width: 200px;
+    background-color:#000;
+    position: absolute;
+    bottom: 40%;
+    right: -100%;
+    transition: right .5s ease;
+}
+.pg4left>a:hover .line{
+    right: -50%;
+}
+.pg4right{
+    width: 40%;
+    height: 100vh;
+    /* background-color: rgb(24, 26, 26); */
+    background-image: url(https://images.unsplash.com/photo-1531934788018-04c3cd417b80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2836&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------------Responsive---------------- */
+/* ---------------Responsive---------------- */
+@media (max-width:  500px) {
+    #main{
+        min-height: 100vh;
+        width: 100vw;
+    }
+    #page1{
+        min-height: 100vh;
+    }
+    #nav{
+        height: 70px;
+        /* background-color: red; */
+        padding: 5vw 5vw 0 5vw;
+    }
+    #nav>h1{
+        letter-spacing: .2rem;
+        font-size: 9vw;
+    }
+    #navright{
+        gap: 20px;
+    }
+    #navright>i{
+        height: 30px;
+        width: 30px;
+        font-size: 4.4vw;
+    }
+    #navright>h2{
+        font-size: 3.3vw;
+    }
+    #navbottom{
+        bottom: 7%;
+        padding: 0 6.5vw;
+        z-index: 9;
+    }
+    .nbleft>h1{
+        font-size: 14vw;
+        font-weight: 900;
+        line-height: 15vw;
+        letter-spacing: .3rem;
+    }
+    .nbleft>h4{
+        font-size: 4vw;
+        width: 60%;
+    }
+    .nbright{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nbright>h2{
+        font-size: 5.6vw;
+    }
+    .nbright>i{
+        font-size: 3.6vw;
+        width: 37px;
+        height: 37px;
+    }
+    .picback{
+        width: 80vw;
+        height: 80vw;
+        top: 35%;
+        left: 50%;
+    }
+    #dimg{
+        top: 75%;
+        left: 50%;
+        width: 120vw;
+    }
+    /* -------------- Page 2 Responsive--------- */
+    /* -------------- Page 2 Responsive--------- */
+
+#page2{
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(239, 240, 245);
+}
+.ptext{
+    /* background-color: rgb(54, 164, 212); */
+    padding: 5vw 5vw;
+}
+.ptext>h1{
+    font-size: 30vw;
+    font-weight: 300;
+}
+.ptext>h3{
+    font-size: 3.5vw;
+    font-weight: 800;
+    width: 75%;
+}
+.project{
+    padding: 2vw 4vw;
+}
+.project>.slide{
+    width: 90%;
+    margin-right: 20px;
+}
+/* -------------- Page 3 Responsive-------- */
+/* -------------- Page 3 Responsive-------- */
+#page3{
+    min-height: 60vh;
+}
+#page3>h1{
+    font-size: 12vw;
+    left: 5%;
+    top: 30%;
+}
+#page3>p{
+    font-size: 3.1vw;
+    width: 55%;
+    left: 5%;
+    bottom: 25%;
+}
+#page3>.image{
+    width: 50vw;
+    height: 70vw;
+    right: -20%;
+    bottom: 20%;   
+}
+#page3>.image>h1{
+    font-size: 22vw;
+    bottom: -15%;
+    left: -15%;
+}
+/* -------------- Page 4 Responsive-------- */
+/* -------------- Page 4 Responsive-------- */
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pg4left{
+    min-height: 50vh;
+    width: 100%;
+    padding: 0 25vw;   
+}
+.pg4left>h1{
+    font-size: 9vw;
+}
+.pg4left>a{
+    font-size: 3vw;
+}
+.pg4left>a>.line{
+    height: 1.8px;
+}
+.pg4right{
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+
+}
