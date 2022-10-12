@@ -38,14 +38,15 @@ html,body{
     position: relative;
 }
 .navopen{
-    width: 28vw;
-    height: 0vw;
+    width: 0vw;
+    height: 0vh;
+    padding:  0vh 0;
     display: none;
-    /* background-color: rgba(213, 222, 222, 0.412); */
+    background-color: rgba(213, 222, 222, 0.412);
     /* backdrop-filter: blur(1px); */
     position: absolute;
     opacity: 0;
-    top: 6%;
+    top: 5%;
     left: 2%;
     border: 1px solid #000;
     border-radius: 10px;
@@ -54,13 +55,37 @@ html,body{
     justify-content:center;
     flex-direction: column;
     gap: 10px;
-    transition: opacity 2s ease;
+    transition: padding .5s ease;
+    z-index: 999999;
 }
 .navopen>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-family: deli;
     font-size: 4vw;
     letter-spacing: 1vw;
     font-weight: 900;
+    z-index: 90;
+    transition: padding .8s ease;
+    /* transition: italic .3s ease; */
+
+}
+#cls{
+    font-size: 2vw;
+    transition: transform 1s ease ;
+}
+#cls:hover{
+    transform: scale(2);
+}
+.navopen>h1:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0 5vw;
+    cursor: pointer;
+    font-style: italic;
+
 }
 #nav>h1{
     font-family: deli;
@@ -186,20 +211,52 @@ html,body{
     /* background-color: red; */
     overflow-x: auto;
     padding: 2vw 4vw;
+    width: 100%;
+    height: 70%;
 }
 .project::-webkit-scrollbar{
     display: none;
 }
 .project>.slide{
-    width: 50%;
+    width: 40%;
+    height: 90%;
     flex-shrink: 0;
-
+    /* background-color: blue; */
     margin-right: 30px;
+    position: relative;
 }
 .slide img{
     height: 100%;
     width: 100%;
+    position: absolute;
+    object-fit: cover;
+    
 }
+
+
+.slide img:nth-child(1) {
+    /* -webkit-filter: grayscale(); */
+    filter: grayscale();
+}
+
+.slide img:nth-child(2) {
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 0% 0%);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------Page 33333---------------- */
 /* ----------------Page 33333---------------- */
 
@@ -303,6 +360,16 @@ html,body{
     background-position: center;
     background-size: cover;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------Responsive---------------- */
 /* ---------------Responsive---------------- */
@@ -456,6 +523,53 @@ html,body{
 }
 
 
+.navopen{
+    width: 0vw;
+    height: 0vh;
+    padding:  10vh 0;
+    display: none;
+    background-color: rgba(213, 222, 222, 0.412);
+    /* backdrop-filter: blur(1px); */
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    left: 2%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: width 1s ease;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+    transition: padding .5s ease;
+    z-index: 999999;
+}
+.navopen>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: deli;
+    font-size: 8vw;
+    letter-spacing: 1vw;
+    font-weight: 900;
+    z-index: 90;
+    transition: padding .8s ease;
+    /* transition: italic .3s ease; */
+
+}
+#cls{
+    font-size: 7vw;
+}
+
+.navopen>h1:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0 1vw;
+    cursor: pointer;
+    font-style: italic;
+
+}
 
 
 }
